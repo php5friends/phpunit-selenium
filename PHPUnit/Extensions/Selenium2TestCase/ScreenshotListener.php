@@ -64,7 +64,7 @@ class PHPUnit_Extensions_Selenium2TestCase_ScreenshotListener
         $this->directory = $directory;
     }
 
-    public function addError(PHPUnit_Framework_Test $test, Exception $e, $time)
+    public function addError(PHPUnit_Framework_Test $test, $e, $time)
     {
         $this->storeAScreenshot($test);
     }
